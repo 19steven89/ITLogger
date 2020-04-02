@@ -1,0 +1,19 @@
+used npx create-react-app . 
+This creates a react app in the current directory
+
+ran the following to install json-server which acts as a fake back-end rest api and concurrently which lets us run the app with one command rather than 2 terminals to run the front and back end:
+npm i -D json-server concurrently
+
+The -D flag in the above command means it is a dev dependency
+
+then to run both the server and front end use "npm run dev"
+
+installed postman on works machine then created get request which gets the data in the db.json file: http://localhost:5000/logs
+
+can also use the following to get a list of techs using postman get request: http://localhost:5000/techs
+
+Put request in postman to get the name of the tech with id of 4: http://localhost:5000/techs/4
+
+installed the following to format dates: npm i moment react-moment
+
+installed the following for the required redux packages: npm i redux react-redux redux-thunk redux-devtools-extension
