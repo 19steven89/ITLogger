@@ -26,7 +26,6 @@ export const TechListModal = () => {
             <div className="modal-content">
                 <h4>Technician List</h4>
                 <ul className="collection">
-                    {/* map through each tach and print them to the UI by using the TechItem component and passing in tech as a prop*/}
                     {!loading && techs.map(tech => <TechItem tech={tech} key={tech.id}/>)}
                 </ul>
             </div>

@@ -48,12 +48,15 @@ const mapStateToProps = state => ({
 // needed to add getLogs as a 2nd param as we need to state any actions which we're going to run
 //export default connect(mapStateToProps, { getLogs })(Logs);
 
-connect(
-    mapStateToProps,
-    { getLogs }
-)(Logs);
+// connect(
+//     mapStateToProps,
+//     { getLogs }
+// )(Logs);
 
 export {
     Logs,
     connect
 }
+
+export default connect(mapStateToProps, {getLogs})(Logs);
+
